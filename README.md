@@ -7,23 +7,20 @@ The workflow is divided into three main components: benchmarking using public da
 
 
 ## Directory Structure
-├── public-MASH-liver-scRNA-seq/     # Analysis of public reference datasets
-│   ├── step1_public_scRNA-seq-anno...   # Raw data processing & cell annotation
-│   └── step2_enrichment_macrophag...    # Macrophage subset enrichment analysis
-│
-├── Ctnnb1-CKO-ACT-MASH-liver/       # Core analysis (In-house data)
-│   ├── step1_total_hepatic_landscape.R # Hepatic cellular landscape construction
-│   ├── step2_immune_cell_porotion_...   # Immune cell proportion statistics
-│   ├── step3_enrichment_analysis.R     # DEG & Pathway enrichment analysis
-│   └── step4_cellchat_mac-hep_LESCs.R  # Cell-cell communication (CellChat)
-│
-├── sc_workflow_QingLab/             # Custom R function library
-│   ├── run_harmony.R                # Batch correction via Harmony
-│   ├── run_cellchat.R               # Automated CellChat pipeline
-│   ├── run_marker.R                 # Differential expression & marker identification
-│   └── run_Vln.R                    # Visualization utilities (Violin plots, etc.)
-│
-└── README.md                        # This file
++ public-MASH-liver-scRNA-seq/     # Analysis of public reference datasets
+  + step1_public_scRNA-seq-anno...   # Raw data processing & cell annotation
+  + step2_enrichment_macrophag...    # Macrophage subset enrichment analysis
++ Ctnnb1-CKO-ACT-MASH-liver/       # Core analysis (In-house data)
+  + step1_total_hepatic_landscape.R # Hepatic cellular landscape construction
+  + step2_immune_cell_porotion_...   # Immune cell proportion statistics
+  + step3_enrichment_analysis.R     # DEG & Pathway enrichment analysis
+  + step4_cellchat_mac-hep_LESCs.R  # Cell-cell communication (CellChat)
++ sc_workflow_QingLab/             # Custom R function library
+  + run_harmony.R                # Batch correction via Harmony
+  + run_cellchat.R               # Automated CellChat pipeline
+  + run_marker.R                 # Differential expression & marker identification
+  + run_Vln.R                    # Visualization utilities (Violin plots, etc.)
++ README.md                        # This file
 
 ## Environment & Dependencies
 All analyses were performed in R (>= 4.0).
